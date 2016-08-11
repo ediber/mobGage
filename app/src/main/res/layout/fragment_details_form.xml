@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/details_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/grey_title" >
+
+            <TextView
+                style="@style/style_white_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/form_title" />
+        </FrameLayout>
+
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/form_mortgage_amount"
+                    style="@style/style_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/money_icon"
+                    android:drawablePadding="3dp"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/form_month_repayment"
+                    style="@style/style_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/money_icon"
+                    android:drawablePadding="3dp"
+                    android:inputType="numberDecimal"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text2" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/form_assetAmount"
+                    style="@style/style_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/money_icon"
+                    android:drawablePadding="3dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="2" />
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dip"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/form_salary"
+                    style="@style/style_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="2"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/money_icon"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dip"
+                        android:layout_height="12dip"
+                        android:layout_marginLeft="12dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/form_asset_location"
+                        style="@style/style_blue_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/form_choose" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/edit_text_bg" />
+
+                    <TextView
+                        android:id="@+id/form_motgage_percent"
+                        style="@style/style_black_text_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="50%" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <EditText
+                    android:id="@+id/form_email"
+                    style="@style/style_blue_text16.Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:text="a@b.com" />
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/form_text6"  />
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+
+
+        <FrameLayout
+        android:id="@+id/form_continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/blue_button" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/form_continue_button_image"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:padding="2dip"
+                android:src="@drawable/white_arrow" />
+
+            <TextView
+                android:id="@+id/form_continue_button_text"
+                style="@style/style_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/form_continue" />
+        </LinearLayout>
+    </FrameLayout>
+        
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

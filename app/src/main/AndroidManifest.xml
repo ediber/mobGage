@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android.mobgage"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="15"
+            android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:name=".apllication.MobgageApplication"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name">
+
+        <activity
+                android:name=".activities.MobgageMainActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.Light"
+                android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
+                android:name=".activities.SplashActivity"
+                android:theme="@android:style/Theme.Holo.Light"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="io.fabric.ApiKey"
+                android:value="c6708ee55881a2e09754a5705db3f3f8829816ab" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/edit_proposal"
+        android:title="@string/menu_proposal_1"/>
+    <item
+        android:id="@+id/delete_proposal"
+        android:title="@string/menu_proposal_2"/>
+    <item
+        android:id="@+id/set_my_motgage"
+        android:title="@string/menu_proposal_3"/>
+
+</menu>

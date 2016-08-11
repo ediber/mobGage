@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobgage</string>
+    <string name="intro_button_text">התחילו לחסוך</string>
+    <string name="tips_title">עזרה</string>
+    <string name="back">חזור</string>
+    <string name="confirm">אישור</string>
+    <string name="cancel">ביטול</string>
+    
+    
+    <string name="main_title">ניהול המשכנתא</string>
+    <string name="main_btn1">השוואת הצעות שקיבלתי</string>
+    <string name="main_btn2">רוצה לקבל המלצה</string>
+    <string name="main_btn4">המשכנתא שלי</string>
+    <string name="main_btn3">מה זה MOBGAGE?</string>
+    <string name="main_comment">המידע אנונימי לחלוטין ואין צורך בפרטים אישיים</string>
+    
+    <string name="form_title">פרטי המשכנתא</string>
+    <string name="form_text1">סכום משכנתא מבוקש:</string>
+    <string name="form_text2">החזר חודשי רצוי:</string>
+    <string name="form_text3">שווי מוערך של הנכס:</string>
+    <string name="form_text4">מיקום הנכס:</string>
+    <string name="form_text5">אחוז מינוף המשכנתא:</string>
+    <string name="form_text6">אימייל:</string>
+    <string name="form_text7">הכנסה חודשית פנוייה:</string>
+    <string name="form_continue">המשך</string>
+    <string name="form_choose">בחר</string>
+    <string name="form_alert_title">נתונים חסרים</string>
+    <string name="form_alert_msg">חובה למלא את כל השדות</string>
+    <string name="form_alert_title2">אימייל לא תקין</string>
+    <string name="form_alert_msg2">הכנס בבקשה כתובת מייל תקינה</string>
+    
+    <string name="choose_bank_title">בחר בנק</string>
+    <string name="choose_route_title">בחר מסלול</string>
+    
+    <string name="equal_foundation">קרן שווה</string>
+    <string name="shpitzer">שפיצר</string>
+    <string name="bolit">בוליט</string>
+
+    <string name="alert2_title">קיימת הצעה קודמת לבנק זה</string>
+    <string name="alert2_msg">האם לערוך הצעה קודמת או להתחיל מחדש?</string>
+    <string name="alert2_btn1">ערוך הצעה קיימת</string>
+    <string name="alert2_btn2">התחל מחדש</string>
+    
+    <string name="route">מסלול</string>
+    <string name="route_text1">סכום הלוואה במסלול:</string>
+    <string name="route_text2">פריים מינוס:</string>
+    <string name="route_text3">ריבית שנתית:</string>
+    <string name="route_text4">תקופה בשנים:</string>
+    <string name="route_text5">שיטת החזר:</string>
+    <string name="route_text7">ריבית משתנה בשנים</string>
+    <string name="route_text6">החזר חודשי:</string>
+    <string name="route_btn">שמור מסלול</string>
+    <string name="route_alert_title">לא ניתן לשמור מסלול</string>
+    <string name="route_alert_msg1">חובה למלא את כל השדות</string>
+    <string name="route_alert_msg2">אנא ודא שכל השדות מולאו בצורה תקינה</string>
+    
+    <string name="alert3_title">סוג מסלול קיים בהצעה</string>
+    <string name="alert3_msg">לא ניתן להוסיף 2 מסלולים מאותו הסוג באותה הצעה</string>
+
+    <!--proposal-->
+    <string name="proposal_title">הצעה מס</string>
+    <string name="proposal_total_amount">הסכום הכולל:</string>
+    <string name="proposal_month_repayment">החזר חודשי</string>
+    <string name="proposal_month_repayment2">החזר חודשי:</string>
+    <string name="proposal_total_repayment">החזר בתום תקופה:</string>
+    <string name="proposal_loan_amount">סכום ההלוואה במסלול</string>
+    <string name="proposal_years">שנים</string>
+    <string name="proposal_interest">ריבית</string>
+    <string name="proposal_add_route">הוסף מסלול</string>
+    <string name="proposal_save">שמור הצעה</string>
+    <string name="proposal_share">שתף</string>
+    <string name="proposal_update_my_mortgage">עדכן משכנתא</string>
+    <string name="proposal_mail_title">שיתוף מסלול</string>
+    <string name="proposal_change">החלף משכנתא</string>
+
+    <!--main-->
+    <string name="main_proposal_dialog_title">חסרים נתונים</string>
+    <string name="main_proposal_dialog_text">על מנת שנוכל להמליץ לך על משכנתא אנחנו צריכים לדעת מה אתה מחפש, האם ברצונך למלא נתונים ?</string>
+
+
+    <!--proposal share-->
+    <string name="proposal_share_title">ההצעה שקיבלתי למשכנתא</string>
+
+    <string name="proposal_share_total_amount2">הסכום הכולל: %s ש\"ח</string>
+    <string name="proposal_share_month_repayment">החזר חודשי: %s ש\"ח</string>
+    <string name="proposal_share_total_repayment">החזר בתום תקופה: %s ש\"ח</string>
+
+    <string name="proposal_share_loan_amount">סכום ההלוואה במסלול: %s ש\"ח</string>
+    <string name="proposal_share_years">שנים: %s</string>
+    <string name="proposal_share_interest">ריבית: %s</string>
+    <string name="proposal_share_interest_prime">ריבית: %s פריים</string>
+    <string name="proposal_share_row_month_repayment">החזר חודשי: %s ש\"ח</string>
+
+
+
+    <string name="list_title">ההצעות שלי</string>
+    <string name="list_proposal_num">הצעה מס</string>
+    <string name="list_text1">סכום המשכנתא</string>
+    <string name="list_text2">שנים</string>
+    <string name="list_text3">החזר בתום תקופה</string>
+    <string name="list_text4">החזר חודשי</string>
+    <string name="list_btn1">הוסף הצעה</string>
+    <string name="list_btn2">קבל המלצה</string>
+    
+    <string name="alert4_title">המשכנתא שלך לא הוגדרה</string>
+    <string name="alert4_msg">בחר והגדר את המשכנתא שלך מתוך ההצעות שלך</string>
+    
+    <string name="alert5_title">הצעה נוכחית לא נשמרה</string>
+    <string name="alert5_msg">ההצעה הנוכחית לא נשמרה, האם להמשיך?</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+
+    <string name="alert6_title">שים לב!</string>
+    <string name="alert6_msg">מינוף גבוה מ 75%</string>
+
+
+    <string-array
+        name="banks_names">
+        <item>בנק הפועלים</item>
+        <item>מזרחי טפחות</item>
+        <item>בנק לאומי</item>
+        <item>הבינלאומי</item>
+        <item>כלל</item>
+        <item>בנק אגוד</item>
+        <item>בנק ירושלים</item>
+        <item>דיסקונט</item>
+    </string-array>
+    
+    <string-array
+        name="routes_kinds_names">
+        <item>ריבית פריים</item>
+        <item>ריבית קבועה צמודה למדד</item>
+        <item>ריבית קבועה לא צמודה</item>
+        <item>ריבית משתנה צמודת מדד</item>
+        <item>ריבית משתנה לא צמודה</item>
+        <item>ריבית דולרית</item>
+        <!--<item>ריבית משתנה עוגן מק"מ</item>-->
+    </string-array>
+    
+    <string name="years_picker_title">בחר תקופה בשנים</string>
+    <string name="return_method_picker_title">בחר שיטת החזר</string>
+    <string name="change_years_picker_title">בחר שינוי בשנים</string>
+    
+    <string name="city_picker_title">בחר עיר</string>
+    <string-array
+        name="cities">
+        <item>אשדוד</item>
+        <item>אילת</item>
+        <item>באר שבע</item>
+        <item>דימונה</item>
+        <item>הרצליה</item>
+        <item>חדרה</item>
+        <item>חיפה</item>
+        <item>טבריה</item>
+        <item>ירושלים</item>
+        <item>כפר סבא</item>
+        <item>מטולה</item>
+        <item>נתניה</item>
+        <item>עפולה</item>
+        <item>ראשון לציון</item>
+        <item>רמת גן</item>
+        <item>תל אביב</item>
+    </string-array>
+    
+    <string-array
+        name="tips">
+        <item>במסך זה יש לבחור את הבנק ממנו קיבלת את ההצעה למשכנתא. ניתן לבחור "אחר" במידה ושם הבנק לא קיים</item>
+        <item>משכנתא מורכבת ממספר משתנה של מסלולים. על מנת להרכיב את ההצעה הכוללת עליך למלא את המסלולים המרכיבים את ההצעה. במסך זה יש לבחור את המסלול אותו תרצה למלא.</item>
+        <item>ברוכים הבאים ל – Mobgage. האפליקציה שתעזור לך לבחור את המשכנתא המתאימה והזולה ביותר, לנהל ולחסוך במשכנתא הקיימת ולשפר הצעות מחיר ממוצרים נלווים.
+להשוואה בין הצעות שקיבלת - "השוואת הצעות שקיבלתי"
+לניהול המשכנתא הקיימת - "המשכנתא שלי"
+לקבלת המלצה למשכנתא המתאימה לך באמצעות חוכמת ההמונים – "רוצה לקבל המלצה" 
+        </item>
+        <item>מסך זה מפרט הצעת משכנתא על כל מסלוליה שנבחרו. במסך זה ניתן להוסיף מסלול נוסף להצעה או לשמור את ההצעה כפי שהיא</item>
+        <item>מסך זה מרכז ומציג את ככל ההצעות שקיבלת מהבנקים השונים. במסך זה ניתן לערוך ולמחוק את ההצעות, למיין את ההצעות לפי פרמטרים שונים, להגדיר הצעה ספציפת כמשכנתא שבחרת לרכוש, וכמובן להשוות את ההצעות שלך למול חוכמת ההמונים התואמת את הפרופיל האישי שלך. </item>
+        <item>מסך זה מכיל את הפרופיל שלך למשכנתא. באמצעות פרופיל זה נוכל להשוות עבורך משכנתאות מכוח ההמונים בעלי פרופיל דומה לך. פרטים אלו הכרחיים להמשך השימוש באפליקציה.</item>
+        <item>במסך זה עליך למלא את פרטי המסלול שקיבלת מהבנקאי. מסלול זה יהווה רכיב אחד בהצעת המשכנתא הכוללת.</item>
+    </string-array>
+    
+    
+    <string name="menu_main_1">עריכת פרופיל</string>
+    
+    <string name="menu_route_1">ערוך</string>
+    <string name="menu_route_2">מחק</string>
+    
+    <string name="menu_proposal_1">ערוך</string>
+    <string name="menu_proposal_2">מחק</string>
+    <string name="menu_proposal_3">הגדר כמשכנתא שלי</string>
+    
+    
+    <string name="menu_sort_1">בנק</string>
+    <string name="menu_sort_2">החזר חודשי</string>
+    <string name="menu_sort_3">החזר בתום תקופה</string>
+    <string name="menu_sort_4">סכום המשכנתא</string>
+    <string name="menu_sort_5">שנים</string>
+    <string name="menu_sort_6">מספר הצעה</string>
+    
+    <string name="my_motgage">המשכנתא שלי</string>
+
+    <string name="recommendation_motgage">משכנתא מומלצת</string>
+
+    <string name="recommendation_dialog">מאתר המלצה המתאימה לדרישות המשכנתא שלך</string>
+
+</resources>

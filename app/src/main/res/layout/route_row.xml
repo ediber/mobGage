@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dip"
+    android:background="@drawable/edit_text_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+		<FrameLayout 
+		    android:layout_width="40dip"
+		    android:id="@+id/route_edit_button"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="15dip"
+            android:layout_gravity="center"
+            android:src="@drawable/edit" />
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/route_row_title"
+        style="@style/style_black_text_medium_bold"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_margin="7dip"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:text="מסלול 1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_weight="0.3"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/style_black_text_medium_normal"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_margin="7dip"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/proposal_month_repayment" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_margin="7dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/route_moth_repayment_image"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center"
+                    android:src="@drawable/money_icon" />
+
+                <TextView
+                    android:id="@+id/month_repayment"
+                    style="@style/style_blue_medium_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="10,350" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View
+        android:layout_width="1dip"
+        android:layout_height="90dip"
+        android:background="#eee" />
+        
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_weight="0.2"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/style_black_text_medium_normal"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_margin="7dip"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/proposal_interest" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_margin="7dip"
+                android:orientation="horizontal" >
+
+                
+
+                <TextView
+                    android:id="@+id/interest"
+                    style="@style/style_blue_medium_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="3.4%" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View
+        android:layout_width="1dip"
+        android:layout_height="90dip"
+        android:background="#eee" />
+        
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_weight="0.2"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/style_black_text_medium_normal"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_margin="7dip"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/proposal_years" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_margin="7dip"
+                android:orientation="horizontal" >
+
+                
+
+                <TextView
+                    android:id="@+id/years"
+                    style="@style/style_blue_medium_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="20" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View
+        android:layout_width="1dip"
+        android:layout_height="90dip"
+        android:background="#eee" />
+        
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="90dip"
+            android:layout_weight="0.4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/loan_amount_label"
+                style="@style/style_black_text_medium_normal"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_margin="7dip"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/proposal_loan_amount" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_margin="7dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center"
+                    android:src="@drawable/money_icon" />
+
+                <TextView
+                    android:id="@+id/loan_amount"
+                    style="@style/style_blue_medium_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="1,200,000" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
+
+	
+
+</LinearLayout>

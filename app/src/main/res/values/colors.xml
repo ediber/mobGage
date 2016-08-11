@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_text">#bbb</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="blue">#117EC1</color>
+    <color name="selected_row_background">#eee</color>
+</resources>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/details_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/grey_title" >
+
+            <TextView
+                android:id="@+id/route_title"
+                style="@style/style_white_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/route_loan_amount"
+                    style="@style/style_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text=""
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/money_icon"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/route_text1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/route_interest"
+                    style="@style/style_blue_text"
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:drawableRight="@drawable/percent"
+                    android:drawablePadding="3dp"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="" />
+
+                <TextView 
+                    android:id="@+id/route_interest_label"
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/route_text2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dip"
+                        android:layout_height="12dip"
+                        android:layout_marginLeft="12dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/route_years"
+                        style="@style/style_blue_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/form_choose" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/route_text4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dip"
+                        android:layout_height="12dip"
+                        android:layout_marginLeft="12dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/route_return_method"
+                        style="@style/style_blue_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/form_choose" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/route_text5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dip"
+                        android:layout_height="12dip"
+                        android:layout_marginLeft="12dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/down_arrow" />
+
+                    <TextView
+                        android:id="@+id/route_change_every_years"
+                        style="@style/style_blue_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/form_choose" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    style="@style/style_black_text_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/route_text7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dip"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@drawable/edit_text_bg" />
+					<LinearLayout 
+					    android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <ImageView 
+                            android:id="@+id/route_moth_repayment_image"
+                            android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="2dip"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/money_icon"/>
+                        <TextView
+                        android:id="@+id/route_moth_repayment"
+                        style="@style/style_blue_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="15dip"
+                        android:layout_gravity="center"
+                        android:text="20" />
+                    <TextView
+                        style="@style/style_blue_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/route_text6" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                
+            </LinearLayout>
+
+            
+        </LinearLayout>
+        </ScrollView>
+        
+        
+        
+        <FrameLayout
+        android:id="@+id/route_save_route_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:visibility="visible"
+        android:background="@drawable/blue_button" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                style="@style/style_white_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/route_btn" />
+        </LinearLayout>
+    </FrameLayout>
+        
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/details_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/grey_title">
+
+            <TextView
+                    android:id="@+id/proposal_title"
+                    style="@style/style_white_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="15dip"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+            <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="8dip"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="2dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/money_icon"/>
+
+                    <TextView
+                            android:id="@+id/proposal_total_amounts"
+                            style="@style/style_blue_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:text=""
+                            android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="2dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/money_icon"/>
+
+                    <TextView
+                            android:id="@+id/proposal_total_month_repayment"
+                            style="@style/style_blue_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:text=""
+                            android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|right"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="2dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/money_icon"/>
+
+                    <TextView
+                            android:id="@+id/proposal_total_repayment"
+                            style="@style/style_blue_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right|center_vertical"
+                            android:text=""
+                            android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/style_blue_text18"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="@string/proposal_total_amount"/>
+
+                <TextView
+                        style="@style/style_blue_text18"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="@string/proposal_month_repayment2"/>
+
+                <TextView
+                        style="@style/style_blue_text18"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="@string/proposal_total_repayment"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/proposal_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dip"
+                android:listSelector="@color/transparent"
+                android:divider="@null">
+        </ListView>
+
+        <LinearLayout
+                android:id="@+id/proposal_buttons_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="0dip"
+                android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:id="@+id/proposal_change_btn"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/blue_button" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <TextView
+                        style="@style/style_white_text"
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/proposal_change" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/proposal_share_btn"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/blue_button">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/proposal_share_btn_text"
+                        style="@style/style_white_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/proposal_share"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/proposal_save_btn"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/blue_button">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                    <TextView
+                            android:id="@+id/proposal_save_btn_text"
+                            style="@style/style_white_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/proposal_save"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:id="@+id/proposal_add_route_btn"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                    <TextView
+                            style="@style/style_white_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/proposal_add_route"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
