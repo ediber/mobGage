@@ -24,6 +24,7 @@ import com.android.mobgage.fragments.ProposalDetailsFragment;
 import com.android.mobgage.fragments.ProposalListFragment;
 import com.android.mobgage.fragments.DetailsFormFragment;
 import com.android.mobgage.fragments.RouteDetailsFragment;
+import com.android.mobgage.fragments.SimulationInitFragment;
 import com.android.mobgage.interfaces.ISortButtonCallback;
 import com.android.mobgage.managers.ActiveSelectionData;
 import com.android.mobgage.managers.DataManager;
@@ -41,6 +42,9 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
     public static final int SCREEN_MY_MOTOGAGE = 8;
     public static final int SCREEN_FRIEND_RECOMMENDATION = 9;
     public static final int SCREEN_USER_DETAILS_FROM_RECOMMENDATION = 10;
+    public static final int SCREEN_USER_SIMULATION_INIT = 11;
+    public static final int SCREEN_USER_SIMULATION_COMPARE = 12;
+    public static final int SCREEN_USER_SIMULATION_SINGLE = 13;
 
     public static final int FILTER_BANK = 0;
     public static final int FILTER_MONTH_REPAYMENT = 1;
@@ -73,6 +77,8 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
         sortButton.setOnClickListener(this);
 
         actionBarView.findViewById(R.id.menu_button).setOnClickListener(this);
+        actionBarView.findViewById(R.id.simulation_button).setOnClickListener(this);
+
         final ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setDisplayShowTitleEnabled(false);
@@ -230,6 +236,12 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
                 break;
             }*/
 
+            case SCREEN_USER_SIMULATION_INIT:
+                activeScreen = SCREEN_USER_SIMULATION_INIT;
+                SimulationInitFragment simulationInitFragment = SimulationInitFragment.newInstance();
+                transaction.replace(R.id.frame, simulationInitFragment);
+                break;
+
             default:
                 break;
         }
@@ -349,10 +361,15 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
             case R.id.menu_button:
                 menuClick(v);
                 break;
+            case R.id.simulation_button:
+                simulationClick(v);
+                break;
+
             default:
                 break;
         }
     }
+
 
     public void helpClick(View v) {
         TipsDialog tips = new TipsDialog(activeScreen);
@@ -422,5 +439,9 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
             }
         });
         popup.show();
+    }
+
+    private void simulationClick(View v) {
+        showScreen(SCREEN_USER_SIMULATION_INIT, true);
     }
 }

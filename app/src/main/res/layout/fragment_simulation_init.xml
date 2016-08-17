@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.mobgage.fragments.SimulationInitFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/details_bg"
+        android:padding="10dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/grey_title" >
+
+            <TextView
+                style="@style/style_white_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/simulation_details" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/style_black_text_bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/simulation_add_parameters" />
+
+        <TextView
+            style="@style/style_black_text_bold"
+
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/simulation_5_years_average"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <FrameLayout
+                android:id="@+id/simulation_init_prime_btn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_button"
+                android:layout_marginRight="20dp">
+
+                    <TextView
+                        style="@style/style_white_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="0.3"
+                        android:id="@+id/simulation_init_prime_txt" />
+
+            </FrameLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/simulation_init_prime_edit"
+                style="@style/style_blue_text"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/percent"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="2"
+                android:layout_marginRight="40dp"
+                />
+
+
+            <TextView
+                style="@style/style_black_text_bold"
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/form_text3"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+
+            <FrameLayout
+                android:id="@+id/simulation_init_changing_btn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_button"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/style_white_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0.15"
+                    android:id="@+id/simulation_init_changing_txt" />
+
+            </FrameLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/simulation_init_changing_edit"
+                style="@style/style_blue_text"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/percent"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="2"
+                android:layout_marginRight="40dp"
+                />
+
+
+            <TextView
+                style="@style/style_black_text_bold"
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/form_text3"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+
+            <FrameLayout
+                android:id="@+id/simulation_init_index_btn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_button"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/simulation_init_index_txt"
+                    style="@style/style_white_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2.1" />
+
+            </FrameLayout>
+
+
+
+
+            <EditText
+                android:id="@+id/simulation_init_index_edit"
+                style="@style/style_blue_text"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/percent"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="2"
+                android:layout_marginRight="40dp"
+                />
+
+
+            <TextView
+                style="@style/style_black_text_bold"
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/form_text3"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/simulation_init_calculate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/blue_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                style="@style/style_white_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/simulation_calculate" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>
