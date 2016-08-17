@@ -24,7 +24,9 @@ import com.android.mobgage.fragments.ProposalDetailsFragment;
 import com.android.mobgage.fragments.ProposalListFragment;
 import com.android.mobgage.fragments.DetailsFormFragment;
 import com.android.mobgage.fragments.RouteDetailsFragment;
+import com.android.mobgage.fragments.SimulationCompareFragment;
 import com.android.mobgage.fragments.SimulationInitFragment;
+import com.android.mobgage.fragments.SimulationSingleFragment;
 import com.android.mobgage.interfaces.ISortButtonCallback;
 import com.android.mobgage.managers.ActiveSelectionData;
 import com.android.mobgage.managers.DataManager;
@@ -240,6 +242,18 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
                 activeScreen = SCREEN_USER_SIMULATION_INIT;
                 SimulationInitFragment simulationInitFragment = SimulationInitFragment.newInstance();
                 transaction.replace(R.id.frame, simulationInitFragment);
+                break;
+
+            case SCREEN_USER_SIMULATION_COMPARE:
+                activeScreen = SCREEN_USER_SIMULATION_COMPARE;
+                SimulationCompareFragment simulationCompareFragment = SimulationCompareFragment.newInstance();
+                transaction.replace(R.id.frame, simulationCompareFragment);
+                break;
+
+            case SCREEN_USER_SIMULATION_SINGLE:
+                activeScreen = SCREEN_USER_SIMULATION_SINGLE;
+                SimulationSingleFragment simulationSingleFragment = SimulationSingleFragment.newInstance();
+                transaction.replace(R.id.frame, simulationSingleFragment);
                 break;
 
             default:
