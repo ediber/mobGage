@@ -89,6 +89,7 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
         } catch (Exception e) {
         }
     }
+    //
 
     public void showScreen(int screen, boolean forward) {
         previousActiveScreen = activeScreen;
