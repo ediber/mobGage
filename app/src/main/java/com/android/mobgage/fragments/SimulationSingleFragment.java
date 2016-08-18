@@ -13,18 +13,30 @@ import com.android.mobgage.R;
 
 public class SimulationSingleFragment extends Fragment {
 
+    private static final String PROPOSAL_ID = "proposalId";
+    private String proposalId;
+
     public SimulationSingleFragment() {
         // Required empty public constructor
     }
 
-    public static SimulationSingleFragment newInstance() {
+    public static SimulationSingleFragment newInstance(String proposalId) {
         SimulationSingleFragment fragment = new SimulationSingleFragment();
 
+        Bundle args = new Bundle();
+        args.putString(PROPOSAL_ID, proposalId);
+        fragment.setArguments(args);
 
         return fragment;
     }
 
-
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            proposalId = getArguments().getString(PROPOSAL_ID);
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,5 +47,5 @@ public class SimulationSingleFragment extends Fragment {
         return view;
     }
 
-
+//    getProposalPositionByID
 }

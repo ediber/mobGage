@@ -126,7 +126,7 @@ public class ProposalListFragment extends Fragment implements OnClickListener, I
 	
 	private void moveToScreen(int screen, boolean forward)
 	{
-		((MobgageMainActivity)(getActivity())).showScreen(screen, forward);
+		((MobgageMainActivity)(getActivity())).showScreen(screen, forward, null);
 	}
 	
 	

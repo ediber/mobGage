@@ -84,7 +84,7 @@ public class SimulationInitFragment extends Fragment {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MobgageMainActivity) (getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_COMPARE, true);
+                ((MobgageMainActivity) (getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_COMPARE, true, null);
             }
         });
 

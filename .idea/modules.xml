@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MobgageAllProject.iml" filepath="$PROJECT_DIR$/MobgageAllProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobGage.iml" filepath="$PROJECT_DIR$/mobGage.iml" />
     </modules>
   </component>
 </project>

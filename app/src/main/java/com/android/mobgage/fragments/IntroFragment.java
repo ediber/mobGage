@@ -35,7 +35,7 @@ public class IntroFragment extends DialogFragment
 				@Override
 				public void onClick(View v) 
 				{
-					((MobgageMainActivity)getActivity()).showScreen(MobgageMainActivity.SCREEN_MAIN, true);
+					((MobgageMainActivity)getActivity()).showScreen(MobgageMainActivity.SCREEN_MAIN, true, null);
 				}
 			});
 			return view;

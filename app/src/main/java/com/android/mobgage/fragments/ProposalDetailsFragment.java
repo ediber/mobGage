@@ -199,7 +199,7 @@ public class ProposalDetailsFragment extends Fragment implements OnClickListener
 
 
     private void moveToScreen(int screen, boolean forward) {
-        ((MobgageMainActivity) (getActivity())).showScreen(screen, forward);
+        ((MobgageMainActivity) (getActivity())).showScreen(screen, forward, null);
     }
 
 

@@ -106,7 +106,7 @@ public class MainFragment extends Fragment implements OnClickListener {
     }
 
     private void moveToScreen(int screen, boolean forward) {
-        ((MobgageMainActivity) (getActivity())).showScreen(screen, forward);
+        ((MobgageMainActivity) (getActivity())).showScreen(screen, forward, null);
     }
 
     private void getRecommendationClick() {
@@ -123,7 +123,7 @@ public class MainFragment extends Fragment implements OnClickListener {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     // TODO Auto-generated method stub
-                    ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_DETAILS_FROM_RECOMMENDATION, true);
+                    ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_DETAILS_FROM_RECOMMENDATION, true, null);
                 }
             });
             builder.setNegativeButton(getResources().getString(R.string.no), null);

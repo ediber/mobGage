@@ -364,7 +364,7 @@ public class RouteDetailsFragment extends Fragment implements OnClickListener, T
 
 
     private void moveToScreen(int screen, boolean forward) {
-        ((MobgageMainActivity) (getActivity())).showScreen(screen, forward);
+        ((MobgageMainActivity) (getActivity())).showScreen(screen, forward, null);
     }
 
 

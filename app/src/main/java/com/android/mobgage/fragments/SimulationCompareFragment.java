@@ -52,7 +52,7 @@ public class SimulationCompareFragment extends Fragment {
     }
 
     private void moveNext(){
-        ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_SINGLE, true);
+        ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_SINGLE, true, null);
     }
 
 

@@ -67,7 +67,7 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
         DataManager.setContext(this);
         setContentView(R.layout.main);
         initActionBar();
-        showScreen(SCREEN_MAIN, true);
+        showScreen(SCREEN_MAIN, true, null);
         //activeScreen = SCREEN_INTRODUCTION_DIALOG;
     }
 
@@ -99,7 +99,7 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
     }
     //
 
-    public void showScreen(int screen, boolean forward) {
+    public void showScreen(int screen, boolean forward, String extra) {
         previousActiveScreen = activeScreen;
         sortButton.setVisibility(View.INVISIBLE);
         hideKeyboard();
@@ -252,7 +252,7 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
 
             case SCREEN_USER_SIMULATION_SINGLE:
                 activeScreen = SCREEN_USER_SIMULATION_SINGLE;
-                SimulationSingleFragment simulationSingleFragment = SimulationSingleFragment.newInstance();
+                SimulationSingleFragment simulationSingleFragment = SimulationSingleFragment.newInstance(extra);
                 transaction.replace(R.id.frame, simulationSingleFragment);
                 break;
 
@@ -279,55 +279,55 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
             }
             case SCREEN_USER_DETAILS_FROM_MAIN: {
                 if (startEditProfile) {
-                    showScreen(previousActiveScreen, false);
+                    showScreen(previousActiveScreen, false, null);
                     startEditProfile = false;
                 } else {
-                    showScreen(SCREEN_MAIN, false);
+                    showScreen(SCREEN_MAIN, false, null);
                 }
                 break;
             }
 
 
             case SCREEN_CHOOSE_BANK: {
-                showScreen(SCREEN_PROPOSAL_LIST, false);
+                showScreen(SCREEN_PROPOSAL_LIST, false, null);
                 break;
             }
             case SCREEN_CHOOSE_ROUTE: {
                 if (previousActiveScreen == SCREEN_PROPOSAL_DETAILS) {
-                    showScreen(previousActiveScreen, false);
+                    showScreen(previousActiveScreen, false, null);
                 } else {
                     if (isEditMode) {
-                        showScreen(SCREEN_PROPOSAL_DETAILS, false);
+                        showScreen(SCREEN_PROPOSAL_DETAILS, false, null);
                     } else {
-                        showScreen(SCREEN_CHOOSE_BANK, false);
+                        showScreen(SCREEN_CHOOSE_BANK, false, null);
                     }
                 }
                 break;
             }
             case SCREEN_ROUTE_DETAILS: {
                 if (previousActiveScreen == SCREEN_PROPOSAL_DETAILS || previousActiveScreen == SCREEN_MY_MOTOGAGE || previousActiveScreen == SCREEN_FRIEND_RECOMMENDATION) {
-                    showScreen(previousActiveScreen, false);
+                    showScreen(previousActiveScreen, false, null);
                 } else {
-                    showScreen(SCREEN_CHOOSE_ROUTE, false);
+                    showScreen(SCREEN_CHOOSE_ROUTE, false, null);
                 }
 
                 break;
             }
             case SCREEN_PROPOSAL_DETAILS: {
                 if (DataManager.getInstance().isInMortgageFlow()) {
-                    showScreen(MobgageMainActivity.SCREEN_MAIN, false);
+                    showScreen(MobgageMainActivity.SCREEN_MAIN, false, null);
                 } else if (previousActiveScreen == SCREEN_PROPOSAL_LIST) {
-                    showScreen(previousActiveScreen, false);
+                    showScreen(previousActiveScreen, false, null);
                 } else {
                     if (isEditMode) {
-                        showScreen(SCREEN_PROPOSAL_LIST, false);
+                        showScreen(SCREEN_PROPOSAL_LIST, false, null);
                     } else {
                         Resources res = getResources();
                         AlertDialog alert = Utils.getAlert(res.getString(R.string.alert5_title), res.getString(R.string.alert5_msg), this);
                         alert.setButton(AlertDialog.BUTTON_POSITIVE, res.getString(R.string.yes), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                showScreen(MobgageMainActivity.SCREEN_PROPOSAL_LIST, false);
+                                showScreen(MobgageMainActivity.SCREEN_PROPOSAL_LIST, false, null);
                             }
                         });
                         alert.setButton(AlertDialog.BUTTON_NEGATIVE, res.getString(R.string.no), new DialogInterface.OnClickListener() {
@@ -343,17 +343,17 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
             }
             case SCREEN_PROPOSAL_LIST: {
                 sortButton.setVisibility(View.INVISIBLE);
-                showScreen(SCREEN_MAIN, false);
+                showScreen(SCREEN_MAIN, false, null);
                 break;
             }
             case SCREEN_MY_MOTOGAGE: {
                 ActiveSelectionData.getInstance().clearProposal();
-                showScreen(SCREEN_MAIN, false);
+                showScreen(SCREEN_MAIN, false, null);
                 break;
             }
             case SCREEN_FRIEND_RECOMMENDATION: {
                 ActiveSelectionData.getInstance().clearProposal();
-                showScreen(SCREEN_PROPOSAL_LIST, false);
+                showScreen(SCREEN_PROPOSAL_LIST, false, null);
                 break;
             }
             default:
@@ -442,7 +442,7 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.edit_profile: {
-                        showScreen(SCREEN_USER_DETAILS_FROM_MAIN, true);
+                        showScreen(SCREEN_USER_DETAILS_FROM_MAIN, true, null);
                         startEditProfile = true;
                         break;
                     }
@@ -456,6 +456,6 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
     }
 
     private void simulationClick(View v) {
-        showScreen(SCREEN_USER_SIMULATION_INIT, true);
+        showScreen(SCREEN_USER_SIMULATION_INIT, true, null);
     }
 }
