@@ -121,4 +121,36 @@ public class Proposal {
     public String getProposalID() {
         return proposalID;
     }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public int getProposalNum() {
+        return proposalNum;
+    }
+
+    public int getBank() {
+        return bank;
+    }
+
+    public float getMortgageAmount() {
+        return mortgageAmount;
+    }
+
+    public int getYears() {
+        return years;
+    }
+
+    public float getTotalRepayment() {
+        return totalRepayment;
+    }
+
+    public float getMonthRepayment() {
+        return monthRepayment;
+    }
+
+    public int getMyMortgage() {
+        return myMortgage;
+    }
 }

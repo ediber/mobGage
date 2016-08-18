@@ -203,8 +203,18 @@
     <string name="simulation_details">מילוי פרטי הסימולציה</string>
     <string name="simulation_calculate">חשב</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--simulation compare-->
+    <string name="simulation_compare_offers">הצעות</string>
+    <string name="simulation_compare_monthly_return">החזר חודשי ממוצע</string>
+    <string name="simulation_compare_all_morgage">סהכ משכנתא</string>
+
+    <!--simulation single-->
+    <string name="simulation_single_date">תאריך</string>
+    <string name="simulation_single_monthly_return">החזר חודשי</string>
+    <string name="simulation_single_mortgage_left">יתרת משכנתא</string>
+    <string name="simulation_single_effective_interest">ריבית אפקטיבית</string>
+
+
 
 
 </resources>

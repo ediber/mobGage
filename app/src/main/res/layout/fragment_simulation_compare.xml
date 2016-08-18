@@ -25,7 +25,7 @@
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_compare_all_morgage"
                 android:layout_marginRight="30dp"
                  />
 
@@ -33,7 +33,7 @@
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_compare_monthly_return"
                 android:layout_marginRight="30dp"
                 />
 
@@ -41,7 +41,7 @@
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_compare_offers"
                 />
         </LinearLayout>
 

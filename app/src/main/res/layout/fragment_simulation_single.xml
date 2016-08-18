@@ -10,7 +10,16 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <TextView
+            style="@style/style_black_text_medium_normal"
+            android:id="@+id/simulation_single_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -21,7 +30,7 @@
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_single_effective_interest"
                 android:layout_marginRight="30dp"
                 />
 
@@ -29,7 +38,7 @@
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_single_mortgage_left"
                 android:layout_marginRight="30dp"
                 />
 
@@ -37,14 +46,14 @@
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_single_monthly_return"
                 />
 
             <TextView
                 style="@style/style_black_text_medium_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/simulation_single_date"
                 />
         </LinearLayout>
 

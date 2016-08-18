@@ -22,6 +22,7 @@ public class SimulationSingleFragment extends Fragment {
     private String proposalId;
     private RecyclerView recyclerView;
     private SimulationSingleAdapter adapter;
+    private TextView offer;
 
     public SimulationSingleFragment() {
         // Required empty public constructor
@@ -52,8 +53,15 @@ public class SimulationSingleFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_simulation_single, container, false);
 
         recyclerView = (RecyclerView)view.findViewById(R.id.simulation_single_recyclerView);
+        offer = (TextView)view.findViewById(R.id.simulation_single_offer);
+
         adapter =  new SimulationSingleAdapter(proposalId);
         recyclerView.setAdapter(adapter);
+
+        Proposal proposal = DataManager.getInstance().getProposalByProposalID(proposalId);
+        String bankName = DataManager.getInstance().getBankByID(proposal.bank).bankName;
+        String rowTitle = bankName + " - " + getResources().getString(R.string.list_proposal_num) + " " + (DataManager.getInstance().getProposalPositionByID(proposal.proposalID));
+        offer.setText(rowTitle);
 
         return view;
     }

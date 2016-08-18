@@ -16,6 +16,8 @@ import com.android.mobgage.activities.MobgageMainActivity;
 import com.android.mobgage.data.Proposal;
 import com.android.mobgage.managers.DataManager;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -44,15 +46,15 @@ public class SimulationCompareFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_simulation_compare, container, false);
 
-        recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         adapter = new SimulationCompareAdapter(getActivity().getApplicationContext());
         recyclerView.setAdapter(adapter);
 
         return view;
     }
 
-    private void moveNext(String proposalID){
-        ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_SINGLE, true, proposalID);
+    private void moveNext(String proposalID) {
+        ((MobgageMainActivity) (getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_SINGLE, true, proposalID);
     }
 
 
@@ -64,6 +66,8 @@ public class SimulationCompareFragment extends Fragment {
         public SimulationCompareAdapter(Context context) {
             this.context = context;
             this.proposals = DataManager.getInstance().getProposalsListByOrder();
+//            proposal.getTotalRepayment()
+            Collections.sort(proposals, new TotalRepaymentComparator());
         }
 
 
@@ -92,6 +96,10 @@ public class SimulationCompareFragment extends Fragment {
                     return true;
                 }
             });
+
+
+            holder.overall.setText(proposal.getTotalRepayment() + "");
+            holder.monthlyReturn.setText(proposal.getMonthRepayment() + "");
         }
 
         @Override
@@ -102,8 +110,8 @@ public class SimulationCompareFragment extends Fragment {
         public class CustomViewHolder extends RecyclerView.ViewHolder {
             private View parent;
             private TextView overall;
-            private  TextView monthlyReturn;
-            private  TextView name;
+            private TextView monthlyReturn;
+            private TextView name;
 
 
             public CustomViewHolder(View view) {
@@ -113,6 +121,23 @@ public class SimulationCompareFragment extends Fragment {
                 this.monthlyReturn = (TextView) view.findViewById(R.id.compare_row_monthly_return);
                 this.name = (TextView) view.findViewById(R.id.compare_row_name);
 
+            }
+        }
+
+        private class TotalRepaymentComparator implements java.util.Comparator<Proposal> {
+
+            @Override
+            public int compare(Proposal prop1, Proposal prop2) {
+                int ans;
+                if (prop1.getTotalRepayment() > prop2.getTotalRepayment()) {
+                    ans = 1;
+                } else if (prop1.getTotalRepayment() == prop2.getTotalRepayment()) {
+                    ans = 0;
+                } else {
+                    ans = -1;
+                }
+
+                return ans;
             }
         }
     }
