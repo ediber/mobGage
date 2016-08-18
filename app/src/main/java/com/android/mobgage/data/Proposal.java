@@ -117,4 +117,8 @@ public class Proposal {
         }
         return sum;
     }
+
+    public String getProposalID() {
+        return proposalID;
+    }
 }

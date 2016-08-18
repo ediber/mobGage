@@ -51,8 +51,8 @@ public class SimulationCompareFragment extends Fragment {
         return view;
     }
 
-    private void moveNext(){
-        ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_SINGLE, true, null);
+    private void moveNext(String proposalID){
+        ((MobgageMainActivity)(getActivity())).showScreen(MobgageMainActivity.SCREEN_USER_SIMULATION_SINGLE, true, proposalID);
     }
 
 
@@ -78,7 +78,7 @@ public class SimulationCompareFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(SimulationCompareAdapter.CustomViewHolder holder, int position) {
-            Proposal proposal = proposals.get(position);
+            final Proposal proposal = proposals.get(position);
 
 
             String bankName = DataManager.getInstance().getBankByID(proposal.bank).bankName;
@@ -87,7 +87,7 @@ public class SimulationCompareFragment extends Fragment {
             holder.parent.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-                    moveNext();
+                    moveNext(proposal.getProposalID());
 
                     return true;
                 }
