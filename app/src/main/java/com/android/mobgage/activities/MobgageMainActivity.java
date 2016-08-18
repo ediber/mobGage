@@ -356,6 +356,25 @@ public class MobgageMainActivity extends Activity implements OnClickListener {
                 showScreen(SCREEN_PROPOSAL_LIST, false, null);
                 break;
             }
+
+            case SCREEN_USER_SIMULATION_INIT: {
+                ActiveSelectionData.getInstance().clearProposal();
+                showScreen(SCREEN_MAIN, false, null);
+                break;
+            }
+
+            case SCREEN_USER_SIMULATION_COMPARE: {
+                ActiveSelectionData.getInstance().clearProposal();
+                showScreen(SCREEN_MAIN, false, null);
+                break;
+            }
+
+            case SCREEN_USER_SIMULATION_SINGLE: {
+                ActiveSelectionData.getInstance().clearProposal();
+                showScreen(SCREEN_USER_SIMULATION_COMPARE, false, null);
+                break;
+            }
+
             default:
                 moveTaskToBack(true);
                 break;
