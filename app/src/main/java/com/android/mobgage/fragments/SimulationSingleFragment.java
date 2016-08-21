@@ -5,6 +5,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import com.android.mobgage.R;
 import com.android.mobgage.data.Proposal;
 import com.android.mobgage.managers.DataManager;
+
+import java.util.Calendar;
 
 
 public class SimulationSingleFragment extends Fragment {
@@ -74,7 +77,7 @@ public class SimulationSingleFragment extends Fragment {
 
         public SimulationSingleAdapter(String proposalId) {
             this.proposalId = proposalId;
-            this.proposal = DataManager.getInstance().getProposalByProposalID(proposalId);
+            this.proposal = DataManager.getInstance().getProposalByProposalID(this.proposalId);
         }
 
         @Override
@@ -87,7 +90,22 @@ public class SimulationSingleFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(SimulationSingleAdapter.CustomViewHolder holder, int position) {
-            holder.date.setText(position + "");
+            Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+
+            Log.d("-edi-", "year " + year);
+            Log.d("-edi-", "month " + month);
+
+            year = year + (month + position) / 12;
+            month = ((month + position) % 12) + 1;
+
+            Log.d("-edi-", "year after" + year);
+            Log.d("-edi-", "month after" + month);
+
+
+//            holder.date.setText(position + "");
+            holder.date.setText(month + "/" + year);
         }
 
         @Override

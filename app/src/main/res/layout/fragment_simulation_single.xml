@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.android.mobgage.fragments.SimulationSingleFragment">
+    tools:context="com.android.mobgage.fragments.SimulationSingleFragment"
+    android:foregroundGravity="right">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -11,7 +12,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="right">
+        android:gravity="right"
+        android:foregroundGravity="right">
 
         <TextView
             style="@style/style_black_text_medium_normal"
@@ -61,7 +63,8 @@
             android:id="@+id/simulation_single_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:foregroundGravity="right" />
 
     </LinearLayout>
 </FrameLayout>
