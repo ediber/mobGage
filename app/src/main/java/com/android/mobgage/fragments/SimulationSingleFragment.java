@@ -111,7 +111,7 @@ public class SimulationSingleFragment extends Fragment {
                 this.left = (TextView) view.findViewById(R.id.single_row_left);
                 this.month_return = (TextView) view.findViewById(R.id.single_row_month_return);
                 this.date = (TextView) view.findViewById(R.id.single_row_date);
-
+///
             }
         }
     }
